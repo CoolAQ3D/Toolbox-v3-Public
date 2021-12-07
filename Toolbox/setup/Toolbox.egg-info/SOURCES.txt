@@ -1,7 +1,0 @@
-setup.py
-Toolbox.egg-info/PKG-INFO
-Toolbox.egg-info/SOURCES.txt
-Toolbox.egg-info/dependency_links.txt
-Toolbox.egg-info/entry_points.txt
-Toolbox.egg-info/requires.txt
-Toolbox.egg-info/top_level.txt

@@ -1,5 +1,9 @@
 
 import subprocess, os, sys
+import pkg_resources
+
+reqs = subprocess.check_output([sys.executable, '-m', 'pip', 'freeze'])
+installed_packages = [r.decode().split('==')[0] for r in reqs.split()]
 
 def check_cli_existence(
   show_installed_message=False
@@ -7,10 +11,13 @@ def check_cli_existence(
   reqs = subprocess.check_output([sys.executable, '-m', 'pip', 'freeze'])
   installed_packages = [r.decode().split('==')[0] for r in reqs.split()]
 
-  if 'Toolbox' not in installed_packages:
-    os.system("pip install -e ./Toolbox/setup")
-  else:
-    if show_installed_message:
-      print('Installed')
+  for package in ['toolbox']:
+    try:
+        dist = pkg_resources.get_distribution(package)
+        print('{} ({}) is installed!'.format(dist.key, dist.version))
+    except pkg_resources.DistributionNotFound:
+        #print('{} is NOT installed'.format(package))
+        print('Installing Toolbox Features!')
+        os.system("pip install -e ./Toolbox/setup")
 
-#print(installed_packages[113])
+  #print(installed_packages[113]) 
