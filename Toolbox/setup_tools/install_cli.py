@@ -18,6 +18,6 @@ def check_cli_existence(
     except pkg_resources.DistributionNotFound:
         #print('{} is NOT installed'.format(package))
         print('Installing Toolbox Features!')
-        os.system("pip install -e ./Toolbox/setup")
+        os.system("pip install -e ./Toolbox")
 
   #print(installed_packages[113]) 

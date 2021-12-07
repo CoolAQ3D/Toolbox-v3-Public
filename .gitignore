@@ -1,0 +1,15 @@
+#Files
+main.sh
+main.py
+
+#Other Stuffs
+__pycache__/
+.Python
+env/
+build/
+develop-eggs/
+eggs/
+.eggs/
+*.egg-info/
+.installed.cfg
+*.egg

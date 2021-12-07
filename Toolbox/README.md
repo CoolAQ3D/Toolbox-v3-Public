@@ -3,8 +3,16 @@
 For Fun, while also learning python, javascript, html, css, etc...
 ## Installation
 
-_Only supports 1 type of  installtion for now._
+_Only supports 2 type of  installtion for now._
 
+### Method #1
+Install using pip directly
+<br>
+`pip install git+https://github.com/CoolAQ3D/Toolbox-v3-Public`
+
+### Method #2
+Install using shell command. (Auto Update Supports)
+<br>
 1: Paste this code in `main.sh` shell file.
 <br>
 2: Run `main.sh` file.
