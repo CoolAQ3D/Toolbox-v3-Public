@@ -1,12 +1,19 @@
 # Toolbox v3
 
+For Fun, while also learning python, javascript, html, css, etc...
 ## Installation
 
-Paste this code in main.sh bash file.
+_Only supports 1 type of  installtion for now._
+
+1: Paste this code in `main.sh` shell file.
+<br>
+2: Run `main.sh` file.
+<br>
+3: Import the library using `import Toolbox` in `main.py` file
 
 ```bash
-#Download
-python main.py
+
+#Install Toolbox v3
 
 if [[ ! -d Toolbox ]];then
  if [[ ! -d Toolbox-Install ]]; then
@@ -24,5 +31,9 @@ else
   git pull | grep -v 'Already up to date.'
   echo 'Your Library is up to date!'
 fi
+```
+
+## Version
+1.0.0
 
 
